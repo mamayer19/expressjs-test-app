@@ -1,0 +1,11 @@
+app: second-app
+env: renewed-river
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.57.0
+values:
+  gitRepository: mamayer19/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  replicas: 16
